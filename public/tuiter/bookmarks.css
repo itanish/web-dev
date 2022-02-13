@@ -166,16 +166,15 @@ body {
     font-size: 18px !important;
 }
 
-.wd-grid-col-bookmark-icons-heart{
-    color: red;
-    font-size: 18px !important;
-    vertical-align: bottom;
-}
 
 .wd-icon-count {
     font-size: 15px;
-    color: white;
+    color: rgb(110, 118, 125);
     padding-left: 12px;
+}
+
+.wd-heart {
+    color: red;
 }
 
 .inline-icon {
