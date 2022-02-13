@@ -1,0 +1,174 @@
+body {
+    background-color: black;
+}
+
+.main {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-left:1px solid rgb(47, 51, 54);
+    border-right:1px solid rgb(47, 51, 54);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index:999;
+}
+
+.wd-grid-col-heading {
+    width: 90%;
+    float: left;
+}
+
+.wd-grid-col-icons {
+    width: 25%;
+    float: left;
+
+}
+
+.wd-grid-col-bookmarks {
+    width: 100%;
+    float: left;
+}
+
+
+.wd-grid-col-avatar {
+    float: left;
+}
+
+
+.wd-grid-col-bookmarked-post {
+    float: left;
+}
+
+
+.wd-grid-row {
+}
+
+.wd-grid-row-title {
+    clear: both;
+    padding-top: 12px;
+}
+
+.wd-grid-row-handle {
+    clear: both;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+
+.wd-grid-row-post {
+    clear: both;
+    padding-top: 12px;
+    padding-left: 16px;
+}
+
+.wd-grid-row-post-content {
+    clear: both;
+    margin-top: 12px;
+    margin-left: 12px;
+    border-radius: 15px 15px 15px 15px;
+    border: 1px solid rgb(47, 51, 54);
+    width: 504px;
+}
+
+.wd-grid-col-bookmark-dots {
+    float: right;
+    color: rgb(29,161,242);
+}
+
+.wd-heading {
+    color: white;
+    font-size: 20px;
+    padding-left: 16px;
+}
+
+.wd-handle {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+    padding-left: 16px;
+}
+
+.wd-post-avatar {
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+}
+
+.wd-post-author {
+    font-size: 15px;
+    color: white;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+.wd-post-author-heart {
+    font-size: 15px;
+    color: red;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+.wd-post-handle {
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+
+}
+
+.wd-post-post-data {
+    font-size: 15px;
+    color: white;
+
+}
+
+.wd-grid-row-post-data {
+    padding-right: 16px;
+    width: 506px;
+    padding-left: 12px;
+}
+
+.wd-post-image {
+    height: 264px;
+    width: 504px;
+    border-radius: 15px 15px 0px 0px;
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.wd-post-content-title {
+    font-size: 15px;
+    color: white;
+
+}
+
+.wd-content {
+    padding: 12px;
+}
+
+.wd-grid-row-icons {
+    float: left;
+    width: 100%;
+    padding-top: 12px;
+    padding-left: 16px;
+}
+
+.wd-grid-col-bookmark-icons {
+    color: rgb(110, 118, 125);
+    vertical-align: bottom;
+    font-size: 18px !important;
+}
+
+.wd-grid-col-bookmark-icons-heart{
+    color: red;
+    font-size: 18px !important;
+    vertical-align: bottom;
+}
+
+.wd-icon-count {
+    font-size: 15px;
+    color: white;
+    padding-left: 12px;
+}
+
+.inline-icon {
+    vertical-align: bottom;
+    font-size: 15px !important;
+}

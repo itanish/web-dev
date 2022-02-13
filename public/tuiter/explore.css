@@ -1,0 +1,150 @@
+body {
+    background-color: black;
+}
+
+.main {
+}
+
+.wd-grid-row-post {
+    clear: both;
+}
+
+.wd-grid-col-search-grid {
+    width: 95%;
+    float: left;
+}
+
+.wd-grid-col-type-d-text {
+    width: 90%;
+    float: left;
+}
+
+.wd-grid-col-type-d-image {
+    float: right;
+    padding-right: 16px;
+}
+
+.wd-grid-col-explore {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid rgb(47, 51, 54);
+    border-top: 1px solid rgb(47, 51, 54);
+    padding: 10px;
+}
+
+.wd-grid-col-settings {
+    width: 5%;
+    float: right;
+}
+
+.wd-grid-col-tabbed-hyperlinks {
+    float: left;
+    text-align: center;
+    padding: 16px;
+}
+
+.wd-grid-col-topics {
+    width: 90%;
+    float: left;
+}
+.wd-grid-col-topics-setting {
+    width: 10%;
+    float: right;
+    color: rgb(47, 51, 54);
+}
+
+.wd-tabbed-links {
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+    padding: 16px;
+}
+
+.wd-tabbed-links:link { text-decoration: none; }
+.wd-tabbed-links:visited { text-decoration: none; }
+.wd-tabbed-links:hover { text-decoration: none; }
+.wd-tabbed-links:active { text-decoration: none; }
+
+.wd-search-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#wd-search {
+    width: 100%;
+    height: 35px;
+    background: darkgray;
+    outline: none;
+    border: none;
+    border-radius: 1.625rem;
+    padding: 0 3.5rem 0 1.5rem;
+    font-size: 1rem;
+    color: white;
+    margin-left: 12px;
+
+}
+
+
+#wd-searchQuerySubmit {
+    width: 3.5rem;
+    height: 2.8rem;
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.wd-explore-settings {
+    font-size:20px;
+    color: rgb(29,161,242);
+    float: right;
+    margin-right: 12px;
+    margin-top: 7px;
+
+}
+
+.wd-topic-settings{
+    color: rgb(110, 118, 125);
+    font-size:20px;
+    float: right;
+    margin-right: 12px;
+    margin-top: 7px;
+
+}
+
+.wd-topics {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+}
+
+.wd-author {
+    color: white;
+    font-size: 15px;
+}
+
+.wd-heading {
+    color: white;
+    font-size: 18px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.wd-post-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 10%;
+}
+
+.wd-post-logo {
+    height: 17px;
+    width: 17px;
+    padding-right: 5px;
+}
+
+.wd-post-verified {
+    height: 15px;
+    width: 15px;
+
+}
