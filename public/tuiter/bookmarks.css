@@ -2,7 +2,7 @@ body {
     background-color: black;
 }
 
-.main {
+.wd-main {
     margin-left: 10px;
     margin-right: 10px;
     border-left:1px solid rgb(47, 51, 54);
@@ -175,9 +175,4 @@ body {
 
 .wd-heart {
     color: red;
-}
-
-.inline-icon {
-    vertical-align: bottom;
-    font-size: 15px !important;
 }
