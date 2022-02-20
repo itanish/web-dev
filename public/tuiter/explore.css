@@ -85,19 +85,21 @@ body {
     align-items: center;
 }
 
-#wd-search {
-    width: 100%;
-    height: 35px;
-    background: darkgray;
-    outline: none;
-    border: none;
-    border-radius: 1.625rem;
-    padding: 0 3.5rem 0 1.5rem;
-    font-size: 1rem;
-    color: white;
+.wd-search {
+    background-color: rgb(33, 35, 39) !important;
+    color: white !important;
+    border: 0 !important;
 
 }
 
+.wd-search-icon {
+    color: rgb(94, 100, 106) !important;
+    padding-right: 0;
+
+}
+
+.wd-padding-col {
+}
 
 #wd-searchQuerySubmit {
     width: 3.5rem;
@@ -128,7 +130,12 @@ body {
 
 .wd-topics {
     color: rgb(110, 118, 125);
-    font-size: 13px;
+    font-size: 17px;
+}
+.wd-topics-main {
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
 }
 
 .wd-author {
@@ -148,6 +155,7 @@ body {
     height: 100px;
     width: 100px;
     border-radius: 10%;
+    float: right;
 }
 
 .wd-post-logo {
@@ -176,4 +184,134 @@ body {
 
 .wd-content-left-border {
     padding-left: 16px;
+}
+
+.wd-bold {
+    font-weight: bold;
+}
+
+.btn-follow {
+    border-radius: 40px !important;
+    float: right !important;
+    background-color: rgb(29,161,242) !important;
+}
+
+.inner-addon .gylph {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+/* align glyph */
+.left-addon .fa  { left:  0px;}
+.right-addon .fa { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+.form-rounded {
+    border-radius: 25px !important;
+}
+
+.wd-settings-icon {
+    font-size: 22px !important;
+    float: right;
+    color: white;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.wd-text-overlay {
+    color: white;
+    font-size: 30px;
+}
+
+.wd-list-group {
+    padding: 0 !important;
+}
+
+.wd-bg-black {
+    background-color: black !important;
+}
+
+.wd-bg-grey {
+    background-color: rgb(33, 35, 39) !important;
+}
+
+.wd-text-white {
+    color: white !important;
+}
+
+.wd-nav-active {
+    font-weight: bold;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+
+.nav-pills .nav-link.active,
+.nav-link.show>.nav-link {
+    color: #121212;
+    text-decoration: none;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(29,161,242);
+    background-color: black !important;
+}
+
+.nav-pills .nav-link:not(.active) {
+    background-color: black;
+    color: white;
+}
+
+.wd-border-bottom {
+    border-bottom: 0.5px solid rgb(47, 51, 54) !important;
+}
+
+.list-group-item-main {
+    border: 0 !important;
+}
+
+.wd-border-left-right {
+    border-left: 0.5px solid rgb(47, 51, 54) !important;
+    border-right: 0.5px solid rgb(47, 51, 54) !important;
+
+}
+
+.list-group-item-follow {
+    border: 0 !important;
+}
+
+.card-main{
+    border: 0 !important;
+}
+
+.wd-no-border {
+    border: 0;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-rounded-corners {
+    border-radius: 15px !important;
+}
+
+.fa-stack {
+    width: 14px !important;
+}
+
+.wd-follow-img {
+    border-radius: 50%;
+}
+
+.wd-show-more {
+    color: rgb(29,161,242);
 }
