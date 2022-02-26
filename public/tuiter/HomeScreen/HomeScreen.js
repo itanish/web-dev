@@ -13,6 +13,7 @@ import PostList from "../PostList";
         ${PostList()}
         </div>
         <div class="col-lg-3 d-none d-lg-block mt-3">
+        ${PostSummaryList()}
         </div>
         </div>
     `);
