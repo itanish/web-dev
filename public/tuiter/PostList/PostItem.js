@@ -1,4 +1,12 @@
 const PostItem = (post) => {
+
+    $(document).ready(function() {
+        if (post.postTitle === '') {
+            $('.wd-post-data-' + post.postTitle).hide();
+            $('.wd-post-img-' + post.postTitle).addClass("wd-post-img-no-data");
+        }
+    });
+
     return(`
         <div class="row mt-3 wd-border-bottom pb-3">
         <div class="col-1">
@@ -16,9 +24,10 @@ const PostItem = (post) => {
             </div>
             
             <div class="card wd-border-post mt-1">
-              <img class="card-img-top wd-post-img" src=${post.postImage}>
-              <div class="card-body">
-                <h6 class="card-title">${post.postTitle}</h6>
+              <img class="card-img-top wd-post-img wd-post-img-${post.postTitle}" src=${post.postImage}>
+              
+              <div class="card-body wd-post-data-${post.postTitle}">
+                <h6 class="card-title wd-post-data-title">${post.postTitle}</h6>
                 <p class="card-text">${post.postTitleData}</p>
               </div>
             </div>

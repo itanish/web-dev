@@ -44,6 +44,12 @@
     border-radius: 3% 3% 0 0 !important;
 }
 
+.wd-post-img-no-data{
+    border-bottom: 1px solid rgb(47, 51, 54) !important;
+    border-radius: 3% 3% 3% 3% !important;
+
+}
+
 .fa-stack {
     width: 14px !important;
 }
