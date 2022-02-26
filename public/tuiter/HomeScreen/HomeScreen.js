@@ -1,7 +1,7 @@
 import NavigationSidebar from "../NavigationSidebar/index.js";
 // import ExploreComponent from "./ExploreComponent.js";
-import PostSummaryList from "../PostSummaryList";
-import PostList from "../PostList";
+import PostSummaryList from "../PostSummaryList/index.js";
+import PostList from "../PostList/index.js";
 
 (function ($) {
     $('#wd-home').append(`
