@@ -11,7 +11,7 @@ const NavigationSidebar = (active) => {
           <i class="fa-brands fa-twitter wd-text-white" aria-hidden="true"></i>
         </li>
         
-        <a class="wd-nav-link" href = "../HomeScreen/home.html">
+        <a class="wd-nav-link" href = "../HomeScreen/index.html">
            <li class="list-group-item wd-navigation home" aria-current="true">
           <span class="d-inline"><i class="fa-solid fa-house wd-text-white" aria-hidden="true"></i></span>
           <span class="d-none d-xl-inline wd-text-white">Home</span>
