@@ -193,7 +193,7 @@ body {
 .btn-follow {
     border-radius: 40px !important;
     float: right !important;
-    background-color: rgb(29,161,242) !important;
+    color: white !important;
 }
 
 .inner-addon .gylph {
