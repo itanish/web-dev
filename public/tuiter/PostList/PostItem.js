@@ -17,7 +17,7 @@ const PostItem = (post) => {
                 <span class="wd-post-author">${post.author}</span>
                 <i class="fa-solid fa-circle-check text-white"></i>
                 <span class="wd-post-handle">@${post.userName}</span>
-                <span class="wd-post-handle">. ${post.postDate}</span>
+                <span class="wd-post-handle">&middot ${post.postDate}</span>
             </div>
 
             <div class="row">
