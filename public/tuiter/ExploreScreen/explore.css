@@ -86,8 +86,8 @@ body {
 }
 
 .wd-search {
-    background-color: rgb(33, 35, 39) !important;
-    color: white !important;
+    background-color: white !important;
+    color: black !important;
     border: 0 !important;
 
 }
@@ -217,7 +217,6 @@ body {
 .wd-settings-icon {
     font-size: 22px !important;
     float: right;
-    color: white;
 }
 
 .bottom-left {
@@ -255,20 +254,10 @@ body {
     border-radius: 0;
 }
 
-.nav-pills .nav-link.active,
-.nav-link.show>.nav-link {
-    color: #121212;
-    text-decoration: none;
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(29,161,242);
-    background-color: black !important;
+.nav-pills {
+    padding-bottom: 10px;
 }
 
-.nav-pills .nav-link:not(.active) {
-    background-color: black;
-    color: white;
-}
 
 .wd-border-bottom {
     border-bottom: 0.5px solid rgb(47, 51, 54) !important;
