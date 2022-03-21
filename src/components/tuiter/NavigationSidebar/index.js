@@ -1,6 +1,7 @@
 import React from "react";
 import '../../../vendors/fontawesome/css/all.min.css';
 import './navigation.css'
+import {Link} from "react-router-dom";
 
 const NavigationSidebar = ({
                                active = 'explore'
@@ -10,28 +11,30 @@ const NavigationSidebar = ({
 
     return(
         <>
-
         <ul className="list-group">
-        <li className="list-group-item" aria-current="true">
+            <Link to="/">
+            <li className="list-group-item" aria-current="true">
           <i className="fa-brands fa-twitter wd-text-white" aria-hidden="true"></i>
         </li>
-        
-        <a className="wd-nav-link" href = "../HomeScreen/index.html">
+            </Link>
+
+            <Link to="/tuiter/home"
+                  className="wd-nav-link" href = "../HomeScreen/index.html">
 
            <li className={`list-group-item
         ${active === 'home' ? 'active' : ''}`}>
           <span className="d-inline"><i className="fa-solid fa-house wd-text-white" aria-hidden="true"></i></span>
           <span className="d-none d-xl-inline wd-text-white">Home</span>
         </li>
-        </a>
+            </Link>
 
-        <a className="wd-nav-link" href = "../ExploreScreen/index.html">
+            <Link to="/tuiter/explore" className="wd-nav-link" href = "../ExploreScreen/index.html">
         <li className={`wd-navigation list-group-item
         ${active === 'explore' ? 'active' : ''}`}>
           <span className="d-inline"><i className="fa-solid fa-hashtag wd-text-white" aria-hidden="true"></i></span>
           <span className="d-none d-xl-inline wd-text-white wd-nav-active">Explore</span>
         </li>
-        </a>
+            </Link>
         
         <li className="list-group-item">
           <span className="d-inline"><i className="fa-solid fa-bell wd-text-white" aria-hidden="true"></i></span>
