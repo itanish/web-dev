@@ -19,7 +19,7 @@ const PostSummaryItem = ({
                     </div>
                     <div className="row">
                       <div className="col">
-                        <span className="wd-topics-main wd-text-white">{post.userName}</span>
+                        <span className="wd-topics-main wd-text-white">{post.userName} </span>
                         <i className="fa-solid fa-circle-check wd-text-white" aria-hidden="true"></i>
                         <span className="wd-topics"> - {post.time}</span>
                       </div>

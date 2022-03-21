@@ -10,6 +10,9 @@ const Labs = () => {
     return(
         <>
             <h1>Labs</h1>
+
+            <TodoList/>
+
             <ConditionalOutput/>
 
             <Styles/>
@@ -21,9 +24,6 @@ const Labs = () => {
             <Link to="/tuiter">
                 Tuiter
             </Link>
-
-            <TodoList/>
-
         </>
     )
 
