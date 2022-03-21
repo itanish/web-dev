@@ -10,7 +10,6 @@ const Tuiter = () => {
     return(
         <>
             <HomeScreen/>
-
         </>
 )
 };

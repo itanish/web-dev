@@ -24,7 +24,7 @@ const NavigationSidebar = ({
            <li className={`list-group-item
         ${active === 'home' ? 'active' : ''}`}>
           <span className="d-inline"><i className="fa-solid fa-house wd-text-white" aria-hidden="true"></i></span>
-          <span className="d-none d-xl-inline wd-text-white">Home</span>
+          <span className="d-none d-xl-inline wd-text-white"> Home</span>
         </li>
             </Link>
 
@@ -32,36 +32,36 @@ const NavigationSidebar = ({
         <li className={`wd-navigation list-group-item
         ${active === 'explore' ? 'active' : ''}`}>
           <span className="d-inline"><i className="fa-solid fa-hashtag wd-text-white" aria-hidden="true"></i></span>
-          <span className="d-none d-xl-inline wd-text-white wd-nav-active">Explore</span>
+          <span className="d-none d-xl-inline wd-text-white"> Explore</span>
         </li>
             </Link>
         
         <li className="list-group-item">
           <span className="d-inline"><i className="fa-solid fa-bell wd-text-white" aria-hidden="true"></i></span>
-          <span className="d-none d-xl-inline wd-text-white">Notifications</span>
+          <span className="d-none d-xl-inline wd-text-white"> Notifications</span>
         </li>
         <li className="list-group-item">
           <span className="d-inline"><i className="fa-solid fa-envelope wd-text-white" aria-hidden="true"></i></span>
-          <span className="d-none d-xl-inline wd-text-white">Messages</span>
+          <span className="d-none d-xl-inline wd-text-white"> Messages</span>
         </li>
         <li className="list-group-item">
           <span className="d-inline"><i className="fa-solid fa-bookmark wd-text-white" aria-hidden="true"></i></span>
-          <span className="d-none d-xl-inline wd-text-white">Bookmarks</span>
+          <span className="d-none d-xl-inline wd-text-white"> Bookmarks</span>
         </li>
         <li className="list-group-item">
           <span className="d-inline"><i className="fa-solid fa-list wd-text-white" aria-hidden="true"></i></span>
-          <span className="d-none d-xl-inline wd-text-white">Lists</span>
+          <span className="d-none d-xl-inline wd-text-white"> Lists</span>
         </li>
         <li className="list-group-item">
           <span className="d-inline"><i className="fa-solid  fa-user wd-text-white" aria-hidden="true"></i></span>
-          <span className="d-none d-xl-inline wd-text-white">Profile</span>
+          <span className="d-none d-xl-inline wd-text-white"> Profile</span>
         </li>
         <li className="list-group-item">
                     <span className="fa-stack fa-1x d-inline-block">
                     <i className="fas fa-circle fa-stack-1x wd-text-white"></i>
                     <i className="fas fa-ellipsis-h fa-stack-1x fa-inverse text-black"></i>
                     </span>
-          <span className="d-none d-xl-inline wd-text-white">More</span>
+          <span className="d-none d-xl-inline wd-text-white"> More</span>
         </li>
       </ul>
       <div className="d-grid gap-2 mt-3">

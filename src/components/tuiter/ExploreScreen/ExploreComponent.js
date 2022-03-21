@@ -45,7 +45,7 @@ const ExploreComponent = () => {
             <div className="row">
                 <div className="card p-0 card-main">
                     <div className="card wd-bg-black card-main">
-                        <img src="images/spacex.jpeg" width="100%"/>
+                        <img src="../tuiter/images/spacex.jpeg" width="100%"/>
                         <div className="card-img-overlay d-flex flex-column justify-content-end">
                             <h5 className="card-title wd-text-overlay">SpaceX's Starship</h5>
                         </div>
