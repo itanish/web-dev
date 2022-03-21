@@ -1,0 +1,68 @@
+
+.wd-border-left-right {
+    border-left: 0.5px solid rgb(47, 51, 54) !important;
+    border-right: 0.5px solid rgb(47, 51, 54) !important;
+
+}
+
+.wd-border-bottom {
+    border-bottom: 0.5px solid rgb(47, 51, 54) !important;
+}
+
+.wd-post-author {
+    font-size: 15px;
+    color: white;
+}
+.wd-post-avatar {
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+}
+
+.wd-grid-col-bookmark-icons {
+    color: rgb(110, 118, 125);
+    font-size: 18px !important;
+}
+
+
+
+.wd-icon-count {
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+    padding-left: 12px;
+}
+
+.wd-border-post {
+    border: 1px solid rgb(47, 51, 54) !important;
+    background-color: black !important;
+    border-radius: 3% !important
+}
+
+
+.wd-post-img{
+    border-bottom: 1px solid rgb(47, 51, 54) !important;
+    border-radius: 3% 3% 0 0 !important;
+}
+
+.wd-post-img-no-data{
+    border-bottom: 1px solid rgb(47, 51, 54) !important;
+    border-radius: 3% 3% 3% 3% !important;
+
+}
+
+.fa-stack {
+    width: 14px !important;
+}
+
+.btn-follow {
+    border-radius: 40px !important;
+    float: right !important;
+    color: white !important;
+}
+
+.wd-post-image {
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+    float: right;
+}

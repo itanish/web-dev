@@ -1,0 +1,306 @@
+body {
+    background-color: black;
+}
+
+.wd-main {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-left:1px solid rgb(47, 51, 54);
+    border-right:1px solid rgb(47, 51, 54);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index:999;
+    padding-bottom: 20px;
+
+}
+
+.wd-grid-row-post {
+    clear: both;
+}
+
+.wd-grid-col-search-grid {
+    width: 95%;
+    float: left;
+}
+
+.wd-grid-col-type-d-text {
+    width: 90%;
+    float: left;
+}
+
+.wd-grid-col-type-d-image {
+    float: right;
+    padding-right: 16px;
+}
+
+.wd-grid-col-explore {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid rgb(47, 51, 54);
+    border-top: 1px solid rgb(47, 51, 54);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.wd-grid-col-settings {
+    width: 5%;
+    float: right;
+}
+
+.wd-grid-col-tabbed-hyperlinks {
+    float: left;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+}
+
+.wd-grid-col-topics {
+    width: 90%;
+    float: left;
+}
+.wd-grid-col-topics-setting {
+    width: 10%;
+    float: right;
+    color: rgb(47, 51, 54);
+}
+
+.wd-tabbed-links {
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+    padding: 16px;
+}
+
+.wd-tabbed-links:link { text-decoration: none; }
+.wd-tabbed-links:visited { text-decoration: none; }
+.wd-tabbed-links:hover { text-decoration: none; }
+.wd-tabbed-links:active { text-decoration: none; }
+
+.wd-search-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.wd-search {
+    background-color: white !important;
+    color: black !important;
+    border: 0 !important;
+
+}
+
+.wd-search-icon {
+    color: rgb(94, 100, 106) !important;
+    padding-right: 0;
+
+}
+
+.wd-padding-col {
+}
+
+#wd-searchQuerySubmit {
+    width: 3.5rem;
+    height: 2.8rem;
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.wd-explore-settings {
+    font-size:20px;
+    color: rgb(29,161,242);
+    float: right;
+    margin-right: 12px;
+    margin-top: 7px;
+
+}
+
+.wd-topic-settings{
+    color: rgb(110, 118, 125);
+    font-size:20px;
+    float: right;
+    margin-right: 12px;
+    margin-top: 7px;
+
+}
+
+.wd-topics {
+    color: rgb(110, 118, 125);
+    font-size: 17px;
+}
+.wd-topics-main {
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.wd-author {
+    color: white;
+    font-size: 15px;
+}
+
+.wd-heading {
+    color: white;
+    font-size: 18px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.wd-post-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 10%;
+    float: right;
+}
+
+.wd-post-logo {
+    height: 17px;
+    width: 17px;
+    padding-right: 5px;
+}
+
+.wd-post-verified {
+    height: 15px;
+    width: 15px;
+}
+
+.wd-for-you {
+    border-bottom: 5px solid rgb(29,161,242);
+    padding-left: 0px;
+}
+
+.wd-for-you-text {
+    color: rgb(29,161,242)
+}
+
+.grid-row-search {
+    margin-top: 10px;
+}
+
+.wd-content-left-border {
+    padding-left: 16px;
+}
+
+.wd-bold {
+    font-weight: bold;
+}
+
+.btn-follow {
+    border-radius: 40px !important;
+    float: right !important;
+    color: white !important;
+}
+
+.inner-addon .gylph {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+/* align glyph */
+.left-addon .fa  { left:  0px;}
+.right-addon .fa { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+.form-rounded {
+    border-radius: 25px !important;
+}
+
+.wd-settings-icon {
+    font-size: 22px !important;
+    float: right;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.wd-text-overlay {
+    color: white;
+    font-size: 30px;
+}
+
+.wd-list-group {
+    padding: 0 !important;
+}
+
+.wd-bg-black {
+    background-color: black !important;
+}
+
+.wd-bg-grey {
+    background-color: rgb(33, 35, 39) !important;
+}
+
+.wd-text-white {
+    color: white !important;
+}
+
+.wd-nav-active {
+    font-weight: bold;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+
+.nav-pills {
+    padding-bottom: 10px;
+}
+
+
+.wd-border-bottom {
+    border-bottom: 0.5px solid rgb(47, 51, 54) !important;
+}
+
+.list-group-item-main {
+    border: 0 !important;
+}
+
+.wd-border-left-right {
+    border-left: 0.5px solid rgb(47, 51, 54) !important;
+    border-right: 0.5px solid rgb(47, 51, 54) !important;
+
+}
+
+.list-group-item-follow {
+    border: 0 !important;
+}
+
+.card-main{
+    border: 0 !important;
+}
+
+.wd-no-border {
+    border: 0;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-rounded-corners {
+    border-radius: 15px !important;
+}
+
+.fa-stack {
+    width: 14px !important;
+}
+
+.wd-follow-img {
+    border-radius: 50%;
+}
+
+.wd-show-more {
+    color: rgb(29,161,242);
+}
