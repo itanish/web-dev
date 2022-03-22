@@ -60,13 +60,6 @@
     color: white !important;
 }
 
-.wd-post-image {
-    height: 50px;
-    width: 50px;
-    border-radius: 10%;
-    float: right;
-}
-
 
 a:link {
     text-decoration: none;

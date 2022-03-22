@@ -31,7 +31,7 @@ const PostSummaryItem = ({
                   </div>
 
                   <div className="col-2">
-                    <img src={post.image} className="wd-post-image"/>
+                    <img src={post.image} className="max-width img-fluid rounded float-right"/>
                   </div>
 
                 </div>
@@ -39,4 +39,5 @@ const PostSummaryItem = ({
             </li>
     );
 }
+
 export default PostSummaryItem;
