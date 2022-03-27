@@ -1,5 +1,5 @@
 import TuitList from "../tuit-list";
-import WhatsHappening from "../whats-happening";
+import WhatsHappening from "../whatsHappening/whats-happening";
 import './home.css';
 
 const HomeScreen = () => {

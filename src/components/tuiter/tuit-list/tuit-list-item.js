@@ -30,20 +30,20 @@ const TuitListItem = ({
 
     return(
         <>
-            <div class="row mt-3 pb-3">
-                <div class="col-1">
-                    <img class="wd-post-avatar" src={post["avatar-image"]}/>
+            <div className="row mt-3 pb-3">
+                <div className="col-1">
+                    <img className="wd-post-avatar" src={post["avatar-image"]}/>
                 </div>
-                <div class="col-11">
-                    <div class="">
-                        <span class="wd-post-author">{post.postedBy.username} </span>
-                        <i class="fa-solid fa-circle-check text-white"></i>
-                        <span class="wd-post-handle"> @{post.handle}</span>
-                        <span class="wd-post-handle"> . {post.time}</span>
+                <div className="col-11">
+                    <div className="">
+                        <span className="wd-post-author">{post.postedBy.username} </span>
+                        <i className="fa-solid fa-circle-check text-white"></i>
+                        <span className="wd-post-handle"> @{post.handle}</span>
+                        <span className="wd-post-handle"> . {post.time}</span>
                     </div>
 
-                    <div class="row">
-                        <span class="wd-post-post-data">{post.tuit}</span>
+                    <div className="row">
+                        <span className="wd-post-post-data">{post.tuit}</span>
                     </div>
 
                         {post.hasOwnProperty('attachments')

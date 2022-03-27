@@ -57,13 +57,13 @@ const EditProfileScreen = () => {
             </div>
 
             <div className="row">
-                <img className="wd-profile-cover" src="https://unsplash.it/1000/1000/?random&pic=1"
+                <img className="wd-profile-cover" src={profileData.bannerPicture}
                      id="header-background-id" alt="background-img"/>
             </div>
 
             <div>
                 <img className="wd-profile-picture"
-                     src="https://unsplash.it/1000/1000/?random&pic=2" alt="profile-picture"/>
+                     src={profileData.profilePicture} alt="profile-picture"/>
 
             </div>
 

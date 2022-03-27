@@ -2,12 +2,20 @@ import React from "react";
 import '../../../vendors/fontawesome/css/all.min.css';
 import './navigation.css'
 import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const NavigationSidebar = ({
                                active = 'home'
                            }) => {
 
-    console.log(active);
+    const location = useLocation();
+    const { pathname } = location;
+    const splitLocation = pathname.split("/");
+
+    if (splitLocation.length > 2 && splitLocation[2] !== "") {
+        active = splitLocation[2];
+    }
 
     return(
         <>
@@ -54,14 +62,14 @@ const NavigationSidebar = ({
           <span className="d-inline"><i className="fa-solid fa-list wd-text-white" aria-hidden="true"></i></span>
           <span className="d-none d-xl-inline wd-text-white"> Lists</span>
         </li>
-            <Link to="/tuiter/profile"
+            <NavLink to="/tuiter/profile" activeClassName='active'
                   className="wd-nav-link">
                 <li className={`list-group-item
         ${active === 'profile' ? 'active' : ''}`}>
           <span className="d-inline"><i className="fa-solid  fa-user wd-text-white" aria-hidden="true"></i></span>
           <span className="d-none d-xl-inline wd-text-white"> Profile</span>
         </li>
-            </Link>
+            </NavLink>
 
             <li className="list-group-item">
                     <span className="fa-stack fa-1x d-inline-block">

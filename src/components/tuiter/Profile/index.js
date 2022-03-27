@@ -8,6 +8,19 @@ const ProfileScreen = () => {
     const profileData = useSelector(
         state => state.profileData);
 
+    var joinedParts = profileData.dateJoined.split('/');
+
+    var monthNames = [
+        "January", "February", "March", "April", "May", "June", "July",
+        "August", "September", "October", "November", "December"
+    ];
+
+    let joinedDate = monthNames[joinedParts[0]-1] + " " + joinedParts[1];
+
+    var bornParts = profileData.dateOfBirth.split('/');
+    let bornDate = monthNames[bornParts[0]-1] + " " + bornParts[1] + ", " + bornParts[2];
+
+
     return(
         <div>
             <div className="row">
@@ -29,13 +42,13 @@ const ProfileScreen = () => {
             </div>
 
             <div className="row">
-                <img className="wd-profile-cover" src="https://unsplash.it/1000/1000/?random&pic=1"
+                <img className="wd-profile-cover" src={profileData.bannerPicture}
                      id="header-background-id" alt="background-img"/>
             </div>
 
             <div>
             <img className="wd-profile-picture"
-                     src="https://unsplash.it/1000/1000/?random&pic=2" alt="profile-picture"/>
+                     src={profileData.profilePicture} alt="profile-picture"/>
                 <Link to="/tuiter/edit-profile"
                       className="wd-nav-link"><button type="button" className="btn btn-outline-primary wd-edit-button">Edit Profile</button>
                       </Link>
@@ -48,7 +61,7 @@ const ProfileScreen = () => {
                         </span>
             </div>
             <div className="row">
-                <span className="wd-profile-handle">
+                <span>
                             @{profileData.handle}
                         </span>
             </div>
@@ -59,32 +72,28 @@ const ProfileScreen = () => {
                         </span>
             </div>
 
-            <div className="row wd-left">
+            <div className="row">
                 <div className="col">
-                    <i className="fa-solid fa-location-dot wd-profile-details"></i>
+                    <i className="fa-solid fa-location-dot "></i>
                     <span className="wd-profile-handle">
                         {profileData.location}
                     </span>
 
-                </div>
-                <div className="col">
                     <i className="fa-brands fa-fly wd-profile-details"></i>
                     <span className="wd-profile-handle">
-                        Born {profileData.dateOfBirth}
+                        Born {bornDate}
                     </span>
-                </div>
-
-                <div className="col">
                     <i className="fa-solid fa-calendar-days wd-profile-details"></i>
                     <span className="wd-profile-handle">
-                        Joined {profileData.dateJoined}
+
+                        Joined {joinedDate}
                     </span>
                 </div>
             </div>
 
             <div className="row wd-left">
                 <div className="col">
-                    <span className="wd-profile-handle wd-text-white wd-bold">
+                    <span className=" wd-text-white wd-bold">
                         {profileData.followingCount}
                     </span>
 
@@ -109,4 +118,3 @@ const ProfileScreen = () => {
 }
 
 export default ProfileScreen;
-
