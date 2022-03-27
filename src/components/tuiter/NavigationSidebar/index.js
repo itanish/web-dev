@@ -4,7 +4,7 @@ import './navigation.css'
 import {Link} from "react-router-dom";
 
 const NavigationSidebar = ({
-                               active = 'explore'
+                               active = 'home'
                            }) => {
 
     console.log(active);
@@ -18,8 +18,8 @@ const NavigationSidebar = ({
         </li>
             </Link>
 
-            <Link to="/tuiter/home"
-                  className="wd-nav-link" href = "../HomeScreen/index.html">
+            <Link to="/tuiter"
+                  className="wd-nav-link">
 
            <li className={`list-group-item
         ${active === 'home' ? 'active' : ''}`}>
@@ -28,8 +28,10 @@ const NavigationSidebar = ({
         </li>
             </Link>
 
-            <Link to="/tuiter/explore" className="wd-nav-link" href = "../ExploreScreen/index.html">
-        <li className={`wd-navigation list-group-item
+            <Link to="/tuiter/explore"
+                  className="wd-nav-link">
+
+                <li className={`list-group-item
         ${active === 'explore' ? 'active' : ''}`}>
           <span className="d-inline"><i className="fa-solid fa-hashtag wd-text-white" aria-hidden="true"></i></span>
           <span className="d-none d-xl-inline wd-text-white"> Explore</span>
@@ -52,11 +54,16 @@ const NavigationSidebar = ({
           <span className="d-inline"><i className="fa-solid fa-list wd-text-white" aria-hidden="true"></i></span>
           <span className="d-none d-xl-inline wd-text-white"> Lists</span>
         </li>
-        <li className="list-group-item">
+            <Link to="/tuiter/profile"
+                  className="wd-nav-link">
+                <li className={`list-group-item
+        ${active === 'profile' ? 'active' : ''}`}>
           <span className="d-inline"><i className="fa-solid  fa-user wd-text-white" aria-hidden="true"></i></span>
           <span className="d-none d-xl-inline wd-text-white"> Profile</span>
         </li>
-        <li className="list-group-item">
+            </Link>
+
+            <li className="list-group-item">
                     <span className="fa-stack fa-1x d-inline-block">
                     <i className="fas fa-circle fa-stack-1x wd-text-white"></i>
                     <i className="fas fa-ellipsis-h fa-stack-1x fa-inverse text-black"></i>
