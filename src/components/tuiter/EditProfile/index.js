@@ -83,7 +83,7 @@ const EditProfileScreen = () => {
 
             <div className="row">
                 <div className='full-input'><label htmlFor='name'>Name</label>
-                    <input type='text' name='name' value={fname + " " + lname}
+                    <input type='text' name='name' defaultValue={fname + " " + lname}
                            onChange={(event) =>
                                setName(event.target.value)}></input>
                 </div>

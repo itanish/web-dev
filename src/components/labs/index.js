@@ -13,18 +13,7 @@ const Labs = () => {
 
             <h1>Labs</h1>
 
-            <h1>A7 Labs:</h1>
-
             <ReduxExamples/>
-
-            <h1>A6 Labs:</h1>
-
-            <TodoList/>
-
-            <ConditionalOutput/>
-
-            <Styles/>
-            <Classes/>
 
             <Link to="/hello">
                 Hello
