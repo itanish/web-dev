@@ -19,7 +19,12 @@ const EditProfileScreen = () => {
     const setName = (name) => {
         const splitName = name.split(" ");
         setFName(splitName[0]);
-        setLName(splitName[1]);
+        if (splitName[1] === undefined) {
+            setLName("");
+        }
+        else {
+            setLName(splitName[1]);
+        }
     }
     let [bio, setBio]
         = useState(profileData.bio);
