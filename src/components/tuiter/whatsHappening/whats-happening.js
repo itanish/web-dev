@@ -30,7 +30,7 @@ const WhatsHappening = () => {
                 </div>
 
             </div>
-            <div className={"row"}>
+            <div className={"row mt-2"}>
                 <div className="col-6">
                     <i className="fa-solid fa-image wd-wh-icon"></i>
                     <i className="fa-solid fa-chart-line wd-wh-icon"></i>
