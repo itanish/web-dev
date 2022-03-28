@@ -2,7 +2,8 @@ import {Link} from "react-router-dom";
 import React, {useState} from "react";
 import './edit-profile.css';
 import {useSelector, useDispatch} from "react-redux";
-import DatePicker from "react-datepicker";
+import { MuiPickersUtilsProvider, DatePicker } from "@material-ui/pickers";
+import MomentUtils from '@date-io/moment';
 
 const EditProfileScreen = () => {
 
@@ -15,6 +16,11 @@ const EditProfileScreen = () => {
     let [lname, setLName]
         = useState(profileData.lastName);
 
+    const setName = (name) => {
+        const splitName = name.split(" ");
+        setFName(splitName[0]);
+        setLName(splitName[1]);
+    }
     let [bio, setBio]
         = useState(profileData.bio);
 
@@ -24,8 +30,10 @@ const EditProfileScreen = () => {
     let [website, setWebsite]
         = useState(profileData.website);
 
-    const [startDate, setStartDate] = useState(new Date());
+    const [bornDate, setBornDate]
+        = useState(profileData.dateOfBirth);
 
+    const [open, setOpen] = useState(false);
 
     const dispatch = useDispatch();
 
@@ -36,7 +44,8 @@ const EditProfileScreen = () => {
                      lname: lname,
                      bio : bio,
                      website: website,
-                     location: location
+                     location: location,
+                     bornDate: bornDate
                  });
     }
         return(
@@ -68,18 +77,10 @@ const EditProfileScreen = () => {
             </div>
 
             <div className="row">
-                <div className='full-input'><label htmlFor='fname'>First Name</label>
-                    <input type='text' name='fname' value={fname}
+                <div className='full-input'><label htmlFor='name'>Name</label>
+                    <input type='text' name='name' value={fname + " " + lname}
                            onChange={(event) =>
-                               setFName(event.target.value)}></input>
-                </div>
-            </div>
-
-            <div className="row">
-                <div className='full-input'><label htmlFor='lname'>Last Name</label>
-                    <input type='text' name='lname' value={lname}
-                           onChange={(event) =>
-                               setLName(event.target.value)}></input>
+                               setName(event.target.value)}></input>
                 </div>
             </div>
 
@@ -105,7 +106,18 @@ const EditProfileScreen = () => {
                 </div>
             </div>
 
-            <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+            <div className="row">
+                <label className={"wd-date-label"}>Birth date:</label>
+                <MuiPickersUtilsProvider utils={MomentUtils}>
+                    <DatePicker
+                        value={bornDate}
+                        format={"MMMM D, yyyy"}
+                        onChange={setBornDate}
+                    />
+
+                </MuiPickersUtilsProvider>
+
+            </div>
 
         </div>
 

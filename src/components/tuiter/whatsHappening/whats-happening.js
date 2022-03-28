@@ -19,7 +19,7 @@ const WhatsHappening = () => {
         <>
             <div className={"row"}>
                 <div className="col-1">
-                    <img className="wd-post-avatar" src="../tuiter/images/inspiration.jpeg"/>
+                    <img className="wd-post-avatar" src="../tuiter/images/avatar.png"/>
                 </div>
                 <div className="col-11">
       <textarea className="wd-new-tuit" placeholder={"What's happening?"} value={whatsHappening}

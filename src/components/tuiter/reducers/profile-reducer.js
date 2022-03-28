@@ -10,6 +10,10 @@ const profileReducer = (state = profileData, action) => {
             profileData.bio = action.bio;
             profileData.location = action.location;
             profileData.website = action.website;
+            profileData.dateOfBirth = action.bornDate._d.getMonth() + 1 + "/" + action.bornDate._d.getDate() + "/" + action.bornDate._d.getFullYear();
+
+            console.log(action.bornDate._d.getDate() + "/" + action.bornDate._d.getMonth() + 1 + "/" + action.bornDate._d.getYear());
+
             return profileData;
 
         default:

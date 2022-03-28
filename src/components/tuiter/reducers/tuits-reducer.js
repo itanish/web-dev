@@ -1,4 +1,5 @@
 import tuits from "../data/tuits.json";
+import profileData from "../data/profileData.json"
 
 const tuitsReducer =
     (state = tuits, action) => {
@@ -28,8 +29,11 @@ const tuitsReducer =
                     tuit: action.tuit,
                     _id: (new Date()).getTime() + '',
                     postedBy: {
-                        "username": "ReactJS"
+                        "username": profileData.firstName + ' ' + profileData.lastName
                     },
+                    handle: profileData.handle,
+                    "time": "Just Now",
+                    "avatar-image": "../tuiter/images/avatar.png",
                     stats: {
                         retuits: 111,
                         likes: 222,
