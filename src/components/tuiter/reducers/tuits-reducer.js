@@ -1,9 +1,20 @@
-import tuits from "../data/tuits.json";
+// import tuits from "../data/tuits.json";
 import profileData from "../data/profileData.json"
+import {FIND_ALL_TUITS, DELETE_TUIT, CREATE_TUIT, UPDATE_TUIT}
+    from "../actions/tuits-actions";
 
 const tuitsReducer =
-    (state = tuits, action) => {
+    (state = [], action) => {
         switch (action.type) {
+
+            case FIND_ALL_TUITS:
+                return action.tuits;
+
+            case UPDATE_TUIT:
+                return state.map(
+                    tuit => tuit._id === action.tuit._id ?
+                            action.tuit : tuit);
+
             case 'like-tuit':
                 return state.map(tuit => {
                     if(tuit._id === action.tuit._id) {
@@ -20,32 +31,17 @@ const tuitsReducer =
                     }
                 });
 
-            case 'delete-tuit':
+            case DELETE_TUIT:
                 return state.filter(
                     tuit => tuit._id !== action.tuit._id);
 
-            case 'create-tuit':
-                const newTuit = {
-                    tuit: action.tuit,
-                    _id: (new Date()).getTime() + '',
-                    postedBy: {
-                        "username": profileData.firstName + ' ' + profileData.lastName
-                    },
-                    handle: profileData.handle,
-                    "time": "Just Now",
-                    "avatar-image": "../tuiter/images/avatar.png",
-                    stats: {
-                        retuits: 111,
-                        likes: 222,
-                        comments: 333
-                    }
-                }
+            case CREATE_TUIT:
                 return [
-                    newTuit,
                     ...state,
+                    action.newTuit
                 ];
             default:
-                return tuits
+                return state
         }
     }
 

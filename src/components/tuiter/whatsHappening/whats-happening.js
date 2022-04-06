@@ -1,17 +1,17 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
 import "./whatsHappening.css";
+import {createTuit,}
+    from "../actions/tuits-actions";
 
 const WhatsHappening = () => {
-    let [whatsHappening, setWhatsHappening]
-        = useState('');
+    const [newTuit, setNewTuit] =
+        useState({tuit: 'New tuit'});
 
     const dispatch = useDispatch();
 
     const tuitClickHandler = () => {
-        dispatch({type: 'create-tuit',
-                     tuit: whatsHappening
-                 });
+        createTuit(dispatch, newTuit)
     }
 
 
@@ -22,10 +22,13 @@ const WhatsHappening = () => {
                     <img className="wd-post-avatar" src="../tuiter/images/avatar.png"/>
                 </div>
                 <div className="col-11">
-      <textarea className="wd-new-tuit" placeholder={"What's happening?"} value={whatsHappening}
-                onChange={(event) =>
-                    setWhatsHappening(event.target.value)}>
-      </textarea>
+
+
+                    <textarea className="wd-new-tuit form-control" placeholder={"What's happening?"}
+                              onChange={(e) =>
+                                  setNewTuit({...newTuit,
+                                                 tuit: e.target.value})}></textarea>
+
 
                 </div>
 
